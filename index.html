@@ -46,35 +46,52 @@
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
+      * {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden scroll-smooth">
     <div
       class="bg-[linear-gradient(#000000B2,#000000B2),url('/imgs/hero.jpg')] bg-cover bg-center"
     >
       <img class="absolute top-0 right-0" src="./imgs/Ellipse 5.png" alt="" />
       <div class="container max-w-[1280px] mx-auto p-[32px]">
-        <nav class="flex items-center justify-between font-montserrat">
+        <nav
+          class="flex items-center justify-between font-montserrat sticky top-0 bg-transparent z-50"
+        >
           <div>
             <img src="./imgs/Foodie.svg" alt="" />
           </div>
-          <div class="flex items-center gap-[32px] z-10">
+          <div class="flex items-center gap-[32px] z-10" id="home">
             <ul class="flex items-center gap-[32px]">
-              <li class="text-white text-[16px] font-roboto cursor-pointer">
-                Home
-              </li>
-              <li class="text-white text-[16px] font-roboto cursor-pointer">
-                About Us
-              </li>
-              <li class="text-white text-[16px] font-roboto cursor-pointer">
-                How It Works
-              </li>
-              <li class="text-white text-[16px] font-roboto cursor-pointer">
-                Screenshots
-              </li>
-              <li class="text-white text-[16px] font-roboto cursor-pointer">
-                Testimonials
-              </li>
+              <a
+                class="text-white text-[16px] font-roboto cursor-pointer"
+                href="#home"
+                >Home</a
+              >
+              <a
+                class="text-white text-[16px] font-roboto cursor-pointer"
+                href="#about"
+              >
+                About Us</a
+              >
+              <a
+                class="text-white text-[16px] font-roboto cursor-pointer"
+                href="#how-it-works"
+              >
+                How It Works</a
+              >
+              <a
+                class="text-white text-[16px] font-roboto cursor-pointer"
+                href="#screenshots"
+                >Screenshots</a
+              >
+              <a
+                class="text-white text-[16px] font-roboto cursor-pointer"
+                href="#testimonials"
+                >Testimonials</a
+              >
             </ul>
             <button
               class="bg-white text-primary p-[12px] rounded-[30px] w-[108px] font-roboto cursor-pointer"
@@ -125,7 +142,7 @@
         </div>
       </div>
     </div>
-    <section class="mt-[100px] py-16">
+    <section class="mt-[100px] py-16 scroll-mt-24" id="about">
       <div class="container max-w-[1280px] mx-auto px-8">
         <div class="flex justify-center items-start gap-[162px]">
           <div>
@@ -225,7 +242,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary py-16">
+    <section class="bg-primary py-16 scroll-mt-24" id="how-it-works">
       <div class="container max-w-[1280px] mx-auto">
         <div class="flex gap-[102px] mx-[30px]">
           <div>
@@ -313,7 +330,7 @@
         </div>
       </div>
     </section>
-    <section class="mt-[100px]">
+    <section class="mt-[100px] scroll-mt-24" id="screenshots">
       <div class="container max-w-[1280px] mx-auto">
         <div>
           <h1
@@ -357,7 +374,10 @@
         </div>
       </div>
     </section>
-    <section class="mt-[100px] bg-[#F4F5F7] py-[100px] h-[740px]">
+    <section
+      class="mt-[100px] bg-[#F4F5F7] py-[100px] h-[740px] scroll-mt-24"
+      id="testimonials"
+    >
       <div class="container max-w-[1280px] mx-auto">
         <div>
           <h1 class="font-montserrat text-[40px] text-center font-bold">
