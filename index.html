@@ -1,14 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div>
-        <h1>exam</h1>
-        <h2>exam2</h2>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-color: #fe724c;
+        --secondary-color: #000000;
+        --accent-color: #ffffff;
+      }
+
+      .text-primary {
+        color: var(--primary-color);
+      }
+      .text-secondary {
+        color: var(--secondary-color);
+      }
+      .text-primary {
+        color: var(--primary-color);
+      }
+      .text-white {
+        color: var(--accent-color);
+      }
+      .bg-primary {
+        background-color: var(--primary-color);
+      }
+      .bg-secondary {
+        background-color: var(--secondary-color);
+      }
+
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      class="bg-[linear-gradient(#000000B2,#000000B2),url('/imgs/hero.jpg')] bg-cover bg-center"
+    >
+      <img class="absolute top-0 right-0" src="./imgs/Ellipse 5.png" alt="" />
+      <div class="container max-w-[1280px] mx-auto p-[32px]">
+        <nav class="flex items-center justify-between font-montserrat">
+          <div>
+            <img src="./imgs/Foodie.svg" alt="" />
+          </div>
+          <div class="flex items-center gap-[32px] z-10">
+            <ul class="flex items-center gap-[32px]">
+              <li class="text-white text-[16px] font-roboto cursor-pointer">
+                Home
+              </li>
+              <li class="text-white text-[16px] font-roboto cursor-pointer">
+                About Us
+              </li>
+              <li class="text-white text-[16px] font-roboto cursor-pointer">
+                How It Works
+              </li>
+              <li class="text-white text-[16px] font-roboto cursor-pointer">
+                Screenshots
+              </li>
+              <li class="text-white text-[16px] font-roboto cursor-pointer">
+                Testimonials
+              </li>
+            </ul>
+            <button
+              class="bg-white text-primary p-[12px] rounded-[30px] w-[108px] font-roboto cursor-pointer"
+            >
+              Login
+            </button>
+          </div>
+        </nav>
+        <div class="flex items-center gap-[40px]">
+          <div class="z-10">
+            <h1
+              class="font-montserrat font-bold text-[46px] text-white max-w-[562px]"
+            >
+              Awesome App for Your Modern Lifestyle
+            </h1>
+            <p
+              class="max-w-[585px] text-white text-[17px] font-roboto mt-[20px]"
+            >
+              We'll help you make your plans, inform you about the best events
+              happening all around the world, tell you all about the best places
+              to eat in the city and much much more. 
+            </p>
+            <div class="flex items-center gap-[32px]">
+              <button
+                class="bg-primary p-[12px] border border-none rounded-[30px] text-white flex items-center mt-[30px] w-[154px] justify-center cursor-pointer font-roboto"
+              >
+                <img src="./imgs/apple.svg" alt="" />App Store
+              </button>
+              <button
+                class="text-white p-[12px] border border-white rounded-[30px] flex items-center mt-[30px] w-[154px] justify-center cursor-pointer font-roboto"
+              >
+                <img src="./imgs/store.svg" alt="" /> Google Play
+              </button>
+            </div>
+          </div>
+          <img class="z-10" src="./imgs/Phone Mockup.png" alt="" />
+        </div>
+      </div>
     </div>
-</body>
+    <section class="mt-[100px] py-16">
+      <div class="container max-w-[1280px] mx-auto px-8">
+        <div class="flex justify-center items-start gap-[162px]">
+          <div>
+            <div class="flex gap-4">
+              <img
+                class="w-[250px] h-[334px] mt-[-65px]"
+                src="./imgs/Image 1.png"
+                alt=""
+              />
+              <img
+                class="w-[270px] h-[270px]"
+                src="./imgs/Image 2.png"
+                alt=""
+              />
+            </div>
+            <div class="flex gap-4 mt-[15px]">
+              <img
+                class="w-[164px] h-[285px]"
+                src="./imgs/Image 3.png"
+                alt=""
+              />
+              <img class="" src="./imgs/Image 4.png" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 max-w-[600px]">
+            <h2
+              class="text-secondary font-montserrat font-bold text-3xl pb-2 relative"
+            >
+              About Us
+              <span
+                class="absolute left-0 bottom-0 w-8 h-0.5 bg-yellow-400"
+              ></span>
+            </h2>
+
+            <p
+              class="text-secondary font-roboto font-bold text-lg leading-relaxed w-[700px]"
+            >
+              Myresfeber is a leading city & entertainment guide filled with
+              handpicked recommendations of what to do in your city, explore
+              hidden gems and be the first to get the latest buzz!
+            </p>
+
+            <div
+              class="text-gray-600 font-roboto text-base leading-relaxed space-y-1 w-[600px]"
+            >
+              <p>
+                We consist of a constantly growing community of local experts
+                showcasing a range of curated content around events, food,
+                shopping, fashion, sightseeing, local communities, travel and so
+                much more!
+              </p>
+
+              <p>
+                We'll help you make your weekend plans, inform you about the
+                best events happening all around the world, tell you all about
+                the best places to eat in the city and much much more. Here's a
+                little taste of the plethora of features we offer:
+              </p>
+
+              <p>
+                You will happily receive expert recommendations tailor-made to
+                suit your interests. We'll be providing you with city-specific
+                stories and videos, handy local information - all right on your
+                smartphone, ready to be scrolled through!
+              </p>
+
+              <p>
+                We'll be updating and pushing through fresh content every few
+                hours, giving you more than enough time to scan through and make
+                plans to explore your city. You can also like, share and
+                bookmark all your favorite articles and blurbs, and store them
+                ready for future lookups!
+              </p>
+
+              <p>
+                We pride ourselves on being one of the fastest-loading apps out
+                there today so that you'll have a seamless browsing experience.
+                With all this and more, all fresh and ready for you guys, this
+                is one platform that'll become your lifeline to navigate all
+                corners of your city. Explore away!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary py-16">
+      <div class="container max-w-[1280px] mx-auto">
+        <div class="flex gap-[102px] mx-[30px]">
+          <div>
+            <h1
+              class="font-montserrat text-[40px] font-bold text-white z-10 w-[544px]"
+            >
+              How does this App Work?
+              <span class="absolute left-0 bottom-0 w-8 h-0.5 bg-white"></span>
+            </h1>
+            <div class="flex flex-col gap-[52px] mt-[100px]">
+              <div class="flex gap-[32px]">
+                <div
+                  class="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-white"
+                >
+                  <img src="./imgs/user.png" alt="" />
+                </div>
+                <div>
+                  <h6 class="text-white text-[22px] font-montserrat">
+                    Make a profile
+                  </h6>
+                  <p class="max-w-[384px] text-[16px] text-white">
+                    Myresfeber is a leading city & entertainment guide filled
+                    with handpicked recommendations of what to do in your city,
+                    explore hidden gems and be the first to get the latest buzz!
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-[32px]">
+                <div
+                  class="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-white"
+                >
+                  <img src="./imgs/dawnlad.png" alt="" />
+                </div>
+                <div>
+                  <h6 class="text-white text-[22px] font-montserrat">
+                    Download it for Free
+                  </h6>
+                  <p class="max-w-[384px] text-[16px] text-white">
+                    Myresfeber is a leading city & entertainment guide filled
+                    with handpicked recommendations of what to do in your city,
+                    explore hidden gems and be the first to get the latest buzz!
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-[32px]">
+                <div
+                  class="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-white"
+                >
+                  <img src="./imgs/chek.png" alt="" />
+                </div>
+                <div>
+                  <h6 class="text-white text-[22px] font-montserrat">
+                    Enjoy this App
+                  </h6>
+                  <p class="max-w-[384px] text-[16px] text-white">
+                    Myresfeber is a leading city & entertainment guide filled
+                    with handpicked recommendations of what to do in your city,
+                    explore hidden gems and be the first to get the latest buzz!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="./imgs/Mask Group.png" alt="" />
+            <img
+              class="w-[432px] h-[700px] object-contain absolute top-0 left-[70px]"
+              src="./imgs/mockup.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-[100px]">
+      <div class="container max-w-[1280px] mx-auto">
+        <div>
+          <h1
+            class="font-montserrat text-[40px] text-center font-bold relative"
+          >
+            Screenshots
+            <!-- <span
+              class="absolute left-0 bottom-0 w-[63px] h-[4px] bg-primary mx-auto flex items-center justify-center  "
+            ></span> -->
+          </h1>
+          <div class="flex gap-[70px] mt-[50px] justify-center">
+            <img
+              class="cursor-pointer object-contain"
+              src="./imgs/Left Arrow.png"
+              alt=""
+            />
+            <img src="./imgs/iPhone X.png" alt="" />
+            <img src="./imgs/2.png" alt="" />
+            <img src="./imgs/3.png" alt="" />
+            <img
+              class="cursor-pointer object-contain"
+              src="./imgs/Right Arrow.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-[100px] bg-[#F4F5F7] py-[100px] h-[740px]">
+      <div class="container max-w-[1280px] mx-auto">
+        <div>
+          <h1 class="font-montserrat text-[40px] text-center font-bold">
+            Our Clients Speak
+          </h1>
+          <p class="text-center font-roboto text-[18px] mt-[20px]">
+            We have been working with clients around the world
+          </p>
+        </div>
+        <div class="flex gap-[30px] justify-center mt-[50px]">
+          <div class="w-[350px] h-[180px] p-[20px] bg-white rounded-[10px]">
+            <h2
+              class="text-center text-[22px] font-bold font-montserrat text-[#18191F]"
+            >
+              Efficient Collaborating
+            </h2>
+            <p
+              class="text-center text-[14px] font-roboto text-[#18191F] mt-[20px]"
+            >
+              Had really great experience with myresfeber, service is really
+              good and everything is just awesome. Great recommendations and
+              bookings were available at a discounted price. Awesome!
+            </p>
+            <div class="w-[40px] h-[40px] bg-white rotate-45 mx-[130px]"></div>
+            <div class="flex flex-col items-center gap-[10px] mt-[30px]">
+              <img src="./imgs/Picture.png" alt="" />
+              <h3 class="font-bold text-[19px] text-[#18191F] font-montserrat">
+                Jane Cooper
+              </h3>
+              <p class="font-roboto text-[#474A57] text-[14px]">
+                CEO at ABC Corporation
+              </p>
+            </div>
+          </div>
+          <div class="w-[350px] h-[180px] p-[20px] bg-white rounded-[10px]">
+            <h2
+              class="text-center text-[22px] font-bold font-montserrat text-[#18191F]"
+            >
+              Intuitive Design
+            </h2>
+            <p
+              class="text-center text-[14px] font-roboto text-[#18191F] mt-[20px]"
+            >
+              Had really great experience with myresfeber, service is really
+              good and everything is just awesome. Great recommendations and
+              bookings were available at a discounted price. Awesome!
+            </p>
+            <div class="w-[40px] h-[40px] bg-white rotate-45 mx-[130px]"></div>
+            <div class="flex flex-col items-center gap-[10px] mt-[30px]">
+              <img src="./imgs/Picture.png" alt="" />
+              <h3 class="font-bold text-[19px] text-[#18191F] font-montserrat">
+                Jane Cooper
+              </h3>
+              <p class="font-roboto text-[#474A57] text-[14px]">
+                CEO at ABC Corporation
+              </p>
+            </div>
+          </div>
+          <div class="w-[350px] h-[180px] p-[20px] bg-white rounded-[10px]">
+            <h2
+              class="text-center text-[22px] font-bold font-montserrat text-[#18191F]"
+            >
+              Mindblowing Service
+            </h2>
+            <p
+              class="text-center text-[14px] font-roboto text-[#18191F] mt-[20px]"
+            >
+              Had really great experience with myresfeber, service is really
+              good and everything is just awesome. Great recommendations and
+              bookings were available at a discounted price. Awesome!
+            </p>
+            <div class="w-[40px] h-[40px] bg-white rotate-45 mx-[130px]"></div>
+            <div class="flex flex-col items-center gap-[10px] mt-[30px]">
+              <img src="./imgs/Picture.png" alt="" />
+              <h3 class="font-bold text-[19px] text-[#18191F] font-montserrat">
+                Jane Cooper
+              </h3>
+              <p class="font-roboto text-[#474A57] text-[14px]">
+                CEO at ABC Corporation
+              </p>
+            </div>
+          </div>
+        </div>
+        <img class="mt-[220px] mx-auto" src="./imgs/1.svg" alt="" />
+      </div>
+    </section>
+    <footer class="bg-secondary">
+      <div class="container max-w-[1280px] mx-auto">
+        <div class="flex justify-between py-[50px]">
+          <div>
+            <img src="./imgs/Foodie.svg" alt="" />
+            <ul class="flex gap-[20px] mt-[20px]">
+              <li class="text-[#D9DBE1] text-[15px] font-roboto">About</li>
+              <li class="text-[#D9DBE1] text-[15px] font-roboto">
+                How it works
+              </li>
+              <li class="text-[#D9DBE1] text-[15px] font-roboto">Contact Us</li>
+              <li class="text-[#D9DBE1] text-[15px] font-roboto">Help</li>
+              <li class="text-[#D9DBE1] text-[15px] font-roboto">
+                Privacy Policy
+              </li>
+            </ul>
+            <p class="text-[#D9DBE1] text-[15px] font-roboto mt-[20px]">
+              © 2021 Foodie. All rights reserved
+            </p>
+          </div>
+          <div class="flex flex-col gap-[20px] mt-[30px]">
+            <p class="text-[#D9DBE1] text-[18px] font-montserrat">
+              Get the App
+            </p>
+            <div class="flex gap-[10px]">
+              <img
+                class="cursor-pointer"
+                src="./imgs/App Store Badge.png"
+                alt=""
+              />
+              <img
+                class="cursor-pointer"
+                src="./imgs/Google Play Badge.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
